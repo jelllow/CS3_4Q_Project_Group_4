@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmpoweRural - Sign Up </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+        <h1 class="headertext">EMPOWERURAL</h1>
+        <img class="favicon" src="images/favicon.png" alt="favicon">
+   </header>
+   
+   <div class="bg">
+    <div class="minicontent">
+        <h3 class="campaign">CAMPAIGN INSIGHT</h3>
+        <p class="campaigntext">This campaign is about BRIDGING THE DIGTAL DIVIDE for rural communities. The 
+            objective of this campaign is to empower rural communities with access to digital technologies, 
+            education, and resources. With these at hand, it is possible to foster economic growth and social 
+            inclus in rural communities. Moreover, as scholars currently, we aim to provide service with the 
+            help and collaboration of the local government and any other more existing campaigns to further 
+            assist us in tackling the projects. Our main goal in this project is to be able to help those 
+            in rural areas by providing them the resources they lack. We plan to do this with the help also 
+            of donation drives and other more processes in order to collect money, we can also include here 
+            the recycling and making use of unused products for possible business and then using that money 
+            to help those in need. 
+        </p>
+    </div>      
+    
+    <form id="login" onsubmit="handleFormSubmit(event)">
+        <fieldset id="form">
+            <legend id="title">SIGN-UP:</legend>
+            
+            <label for="fname">FIRST NAME: </label>
+            <input type="text" placeholder="Enter First Name" name="fname" id="fName" required>
+
+            <label for="lname">LAST NAME: </label>
+            <input type="text" placeholder="Enter Last Name" name="lname" id="lName" required><br><br>
+            
+            <label for="sex">SEX:</label><br>
+            <select name="Sex" id="sex" required>
+                <option value="Select" selected disabled hidden>Select Gender</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Prefer not to say">Prefer not to say</option>
+            </select><br><br>
+            
+            <label for="email">EMAIL ADRESS:</label><br>
+            <input type="email" placeholder="Enter Email Address" name="email" id="Email" required><br><br>
+            
+            <label for="pword">PASSWORD:</label><br>
+            <input type="password" placeholder="Enter Password" name="pword" id="pWord" required><br><br>
+           
+            <label for="con">CONTACT NUMBER:</label><br>
+            <input type="text" placeholder="Enter Contact Number" name="con" id="contact" required><br><br>
+           
+            <label for="rson">REASON IN SUPPORTING THE CAMPAIGN:</label><br>
+            <textarea placeholder="Enter" name="rson" id="reason" rows="2" cols="21" required></textarea><br><br>
+
+            <input id="submit-btn" type="submit" value="SIGN-UP">
+            <input id="reset-btn" type="reset" value="CLEAR" onclick="resetForm()">
+        </fieldset>
+    </form>
+    </div>
+    
+    <script src="script (sign up).js"></script>
+</body>
+</html>
